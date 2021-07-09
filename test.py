@@ -1,7 +1,3 @@
-import streamlit as st
-import numpy as np
-import pandas as pd
-
 from func import get_indexs, get_distance
 
 whisky = pd.read_csv('whisky.csv')

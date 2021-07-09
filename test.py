@@ -23,9 +23,7 @@ whiskyv.Meta_Critic = pd.to_numeric(whiskyv.Meta_Critic, downcast='float')
 
 
 
-st.write("""
-# Whisky Recommender
-""")
+st.title('Whisky Recommender')
 
 input = st.text_input("Favorite Whisky", "Bowmore 12")
 ind = get_indexs(whiskyv, input)
@@ -34,14 +32,10 @@ whisky_show = whisky[['Whisky', 'Cost', 'Class', 'Country', 'Type']]
 whisky_final = whisky_show.iloc[whisky_list]
 your_whisky = whisky_show.loc[[ind]]
 
-st.write("""
-# Favorite Whisky
-""")
+st.subheader('Favorite Whisky')
 
 st.table(your_whisky.set_index('Whisky'))
 
-st.write("""
-# Similar Whiskies
-""")
+st.subheader('Similar Whiskies')
 
 st.table(whisky_final.set_index('Whisky'))

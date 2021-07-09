@@ -25,8 +25,6 @@ whiskyv.Meta_Critic = pd.to_numeric(whiskyv.Meta_Critic, downcast='float')
 
 st.write("""
 # Whisky Recommender
-
-Input Favorite Whisky
 """)
 
 input = st.text_input("Favorite Whisky", "Bowmore 12")

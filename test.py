@@ -40,10 +40,10 @@ st.write("""
 # Favorite Whisky
 """)
 
-st.dataframe(your_whisky.set_index('Whisky'))
+st.table(your_whisky.set_index('Whisky'))
 
 st.write("""
 # Similar Whiskies
 """)
 
-st.dataframe(whisky_final.set_index('Whisky'))
+st.table(whisky_final.set_index('Whisky'))

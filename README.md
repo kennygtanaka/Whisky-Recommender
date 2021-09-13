@@ -12,6 +12,7 @@ This whisky recommender uses cosine similarity to weight different features of e
 ## Method 
 
 The recommender was created using cosine similarity. 
+Taste was given a weight of 7x more than other variables. 
 Streamlit, a web development tool was used to create an app to have the recommender run. 
 
 ## Input 
